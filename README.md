@@ -22,7 +22,7 @@ Then install BeautifulSoup
 After this you will need to get the ChromeDriver
 ```https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/```
 
-Download the EXE and place it in your C:\\ (or edit the path in main.py to where you driver is located)
+Download Win32.zip and extract the EXE to your C:\ (requires admin permissions, or you can edit the path in main.py to where ever you extract it)
 NOTE: Please make sure you have Chrome 97 installed on your system, as well as download the driver 97!
 
 Then you should be good to go!
