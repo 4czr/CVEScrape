@@ -41,6 +41,7 @@ Then install BeautifulSoup
 After this you will need to get the ChromeDriver (linux64 version)
 ```https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/```
 Extract the zip to your home directory and edit main.py and replace the driver path with yours
+
 NOTE: Please make sure you have Chrome 97 installed on your system, as well as download the driver 97!
 
 Then you should be good to go!
