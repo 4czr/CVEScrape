@@ -22,7 +22,10 @@ try:
         arguments, values = getopt.getopt(args, cmdoptions, long_options)
         for currentArgument, currentValue in arguments:
                 if currentArgument in ("-h", "--Help"):
-                        print ("Displaying Help\n python3 main.py -h | Displays this text\npython3 main.py -s | Search for CVE by keyword\npython3 main.py -r | Displays the most recent CVEs posted")
+                        print ("""Displaying Help
+                        python3 main.py -h | Displays this text
+                        python3 main.py -s KEYWORD | Search for CVE by keyword
+                        python3 main.py -r | Displays the most recent CVEs posted""")
                         exit()
                 elif currentArgument in ("-s", "--Search"):
                         search = ("% s") % (currentValue)
@@ -32,7 +35,10 @@ try:
                         driver.get('https://www.exploit-db.com/')
                         driver.implicitly_wait(5)
                 else:
-                        print("Displaying Help\n python3 main.py -h | Displays this text\npython3 main.py -s | Search for CVE by keyword\npython3 main.py -r | Displays the most recent CVEs posted")
+                        print ("""Displaying Help
+                        python3 main.py -h | Displays this text
+                        python3 main.py -s KEYWORD | Search for CVE by keyword
+                        python3 main.py -r | Displays the most recent CVEs posted""")
                         exit()
 
                 # If you run into any firewall issues you can uncomment this section and add in your own valid cookie and useragent for bypass
@@ -56,5 +62,7 @@ try:
 except getopt.error as err:
         # output error, and return with an error code
         print (str(err))
-        print("\nDisplaying Help\n\npython3 main.py -h | Displays this text\npython3 main.py -s | Search for CVE by keyword\npython3 main.py -r | Displays the most recent CVEs posted")
-        exit()
+        print ("""Displaying Help
+        python3 main.py -h | Displays this text
+        python3 main.py -s KEYWORD | Search for CVE by keyword
+        python3 main.py -r | Displays the most recent CVEs posted""")
