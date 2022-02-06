@@ -21,8 +21,7 @@ path = 'C://chromedriver.exe'
 service = Service(executable_path=path)
 driver = webdriver.Chrome(service=service, options=options)
 
-loop = "true"
-while loop == "true": # Loop until exit
+while True: # Loop until exit
         search = ""
         option = input("Please select your option number: ")
         if option == "1":
