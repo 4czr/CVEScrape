@@ -16,7 +16,7 @@ python3 main.py -r | Displays the most recent CVEs posted
 
 # How To Install
 #####  *Python 3.10.2 or later recommended*
-### Windows
+## Windows
 
 First install selenium
 ```pip install selenium```
@@ -31,7 +31,7 @@ Download the windows zip and extract the EXE to your C:\\ (or edit the path in m
 NOTE: Please make sure you have Chrome 97 installed on your system, as well as download the driver 97!
 
 Then you should be good to go!
-### Linux/Mac
+## Linux/Mac
 First install selenium
 ```pip install selenium```
 
