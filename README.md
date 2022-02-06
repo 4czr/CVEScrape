@@ -7,11 +7,16 @@ Github @4czr
 
 Email ozz@riseup.net
 
-# Version
-**1.0**
+# Use
+```
+python3 main.py -h | Displays this help text
+python3 main.py -s KEYWORD | Search for CVE by keyword
+python3 main.py -r | Displays the most recent CVEs posted
+```
 
-# How To Run
+# How To Install
 #####  *Python 3.10.2 or later recommended*
+### Windows
 
 First install selenium
 ```pip install selenium```
@@ -22,12 +27,27 @@ Then install BeautifulSoup
 After this you will need to get the ChromeDriver
 ```https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/```
 
-Download Win32.zip and extract the EXE to your C:\ (requires admin permissions, or you can edit the path in main.py to where ever you extract it)
+Download the windows zip and extract the EXE to your C:\\ (or edit the path in main.py to where you driver is located)
+NOTE: Please make sure you have Chrome 97 installed on your system, as well as download the driver 97!
+
+Then you should be good to go!
+### Linux/Mac
+First install selenium
+```pip install selenium```
+
+Then install BeautifulSoup
+```pip install bs4```
+
+After this you will need to get the ChromeDriver (linux64 version)
+```https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/```
+Extract the zip to your home directory and edit main.py and replace the driver path with yours
 NOTE: Please make sure you have Chrome 97 installed on your system, as well as download the driver 97!
 
 Then you should be good to go!
 
+# Version
+**1.2**
+
 # What's To Come?
 - Multi-site intergration
-- Multi OS
 - Better data orginization
